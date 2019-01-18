@@ -378,10 +378,6 @@ textarea {
         overflow-x: hidden;
     }
 
-    div.contenedor-video video{
-        width: 112%;
-    }
-
     div.contenido-programa {
         position: absolute;
         top: 0;
@@ -392,7 +388,7 @@ textarea {
 
     div.programa-evento{
         background-color: rgba(255,255,255, .8);
-        padding: 15px;
+        padding: 15px 0px 0px 0px;
         margin-top: 40px;
     }
 
@@ -457,7 +453,66 @@ textarea {
         margin-bottom: 20px;
         font-size: 20px;
     }
+    
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
+    ul.lista-invitados li{
+        padding: 10px;
+        float: left;
+    }
+
+    @media only screen and (min-width:480px){
+        ul.lista-invitados li{
+            width: 50%;
+        }
+    }
+
+    @media only screen and (min-width:768px){
+        ul.lista-invitados li{
+            width: 33.3%;
+        }
+    }
+
+    div.invitado{
+        position: relative;
+        overflow: hidden;
+    }
+
+    div.invitado img{
+        max-width: 100%;
+        filter:gray;
+        -webkit-filter: grayscale(1);
+        transition: all .5s ease-in-out;
+    }
+
+    div.invitado:hover img{
+        filter: grayscale(0);
+        transform: scale(1.1)
+    }
+
+    div.invitado p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 15px 10px;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        width: 100%;
+        text-align: left;
+        font-family: 'Aleo', serif;
+        color: #fe4918;
+        text-transform: uppercase;
+        transition: all .5s ease-in-out;
+    }
+
+    div.invitado:hover p{
+        bottom: -80px;
+        opacity: 0;
+    }
 
 /* ==========================================================================
    Helper classes
