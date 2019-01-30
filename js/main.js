@@ -1,9 +1,9 @@
-(function(){
+(function () {
     'use strict';
 
     var regalo = document.getElementById("regalo");
 
-    document.addEventListener('DOMContentLoaded', function(){
+    document.addEventListener('DOMContentLoaded', function () {
         console.log("El HTML se termino de cargar");
 
         // CAMPOS DATOS USUARIOS
@@ -30,63 +30,121 @@
 
 
         calcular.addEventListener('click', calcularValor);
+        Bogota_Historica.addEventListener('blur', mostrarTours);
+        Bogota_Cultural.addEventListener('blur', mostrarTours);
+        montanismo.addEventListener('blur', mostrarTours);
 
-        function calcularValor(event){
+        nombre.addEventListener("blur", validarCampos);
+        apellido.addEventListener("blur", validarCampos);
+        email.addEventListener("blur", validarCampos);
+        email.addEventListener("blur", validarEmail);
+
+        function validarEmail() {
+            if (this.value.indexOf("@") > -1) {
+                errorDiv.style.display = "none";
+                this.style.border = "1px solid #cccccc";
+            } else {
+                errorDiv.style.display = 'block';
+                errorDiv.style.color = 'red';
+                errorDiv.innerHTML = "El correo no es correcto";
+                this.style.border = "1px solid red";
+                errorDiv.style.border = "1px solid red";
+            }
+        }
+
+        function validarCampos() {
+            if (this.value == '') {
+                errorDiv.style.display = 'block';
+                errorDiv.style.color = 'red';
+                errorDiv.innerHTML = "Este campo es obligatorio";
+                this.style.border = "1px solid red";
+                errorDiv.style.border = "1px solid red";
+            } else {
+                errorDiv.style.display = "none";
+                this.style.border = "1px solid #cccccc";
+            }
+        }
+
+        function calcularValor(event) {
             event.preventDefault();
-            if(regalo.value === ''){
+            if (regalo.value === '') {
                 alert("Debes elegir un regalo");
                 regalo.focus();
-            } else{
+            } else {
                 var boletosHistorica = parseInt(Bogota_Historica.value, 10) || 0,
                     boletosCultural = parseInt(Bogota_Cultural.value, 10) || 0,
                     boletosMontanismo = parseInt(montanismo.value, 10) || 0,
                     cantBonos = parseInt(bonos.value, 10) || 0,
                     cantStickers = parseInt(stickers.value, 10) || 0;
 
-                var totalPagar = (boletosHistorica * 25000) + (boletosCultural * 28000) + (boletosMontanismo * 30000) + ((cantBonos * 7000) * .80) + (cantStickers * 5000) ;
+                var totalPagar = (boletosHistorica * 25000) + (boletosCultural * 28000) + (boletosMontanismo * 30000) + ((cantBonos * 7000) * .80) + (cantStickers * 5000);
 
                 var listadoProductos = [];
 
-                if (boletosCultural > 1){
-                    listadoProductos.push(boletosCultural + ' boletos para Tour Bogotá Cultural'); 
-                }else if (boletosCultural == 1){
-                    listadoProductos.push(boletosCultural + ' boleto para Tour Bogotá Cultural'); 
-                }
-                
-                if (boletosHistorica > 1){
-                    listadoProductos.push(boletosHistorica + ' boletos para Tour Bogotá Historica'); 
-                }else if (boletosHistorica == 1){
-                    listadoProductos.push(boletosHistorica + ' boletos para Tour Bogotá Historica'); 
+                if (boletosCultural > 1) {
+                    listadoProductos.push(boletosCultural + ' boletos para Tour Bogotá Cultural');
+                } else if (boletosCultural == 1) {
+                    listadoProductos.push(boletosCultural + ' boleto para Tour Bogotá Cultural');
                 }
 
-                if (boletosMontanismo > 1){
-                    listadoProductos.push(boletosMontanismo + ' boletos para Tour Ciclomontañismo'); 
-                }else if (boletosMontanismo == 1){
-                    listadoProductos.push(boletosMontanismo + ' boletos para Tour Ciclomontañismo'); 
+                if (boletosHistorica > 1) {
+                    listadoProductos.push(boletosHistorica + ' boletos para Tour Bogotá Historica');
+                } else if (boletosHistorica == 1) {
+                    listadoProductos.push(boletosHistorica + ' boletos para Tour Bogotá Historica');
                 }
 
-                if (cantBonos > 1){
-                    listadoProductos.push(cantBonos + ' bonos con descuento'); 
-                }else if (cantBonos == 1){
-                    listadoProductos.push(cantBonos + ' bonos con descuento'); 
+                if (boletosMontanismo > 1) {
+                    listadoProductos.push(boletosMontanismo + ' boletos para Tour Ciclomontañismo');
+                } else if (boletosMontanismo == 1) {
+                    listadoProductos.push(boletosMontanismo + ' boletos para Tour Ciclomontañismo');
                 }
 
-                if (cantStickers > 1){
-                    listadoProductos.push(cantStickers + ' stickers'); 
-                }else if (cantStickers == 1){
-                    listadoProductos.push(cantStickers + ' stickers'); 
+                if (cantBonos > 1) {
+                    listadoProductos.push(cantBonos + ' bonos con descuento');
+                } else if (cantBonos == 1) {
+                    listadoProductos.push(cantBonos + ' bonos con descuento');
                 }
 
-                lista_Productos.style.display ="block";
+                if (cantStickers > 1) {
+                    listadoProductos.push(cantStickers + ' stickers');
+                } else if (cantStickers == 1) {
+                    listadoProductos.push(cantStickers + ' stickers');
+                }
+
+                lista_Productos.style.display = "block";
 
                 lista_Productos.innerHTML = '';
-                for (var i = 0; i< listadoProductos.length; i++){
+                for (var i = 0; i < listadoProductos.length; i++) {
                     lista_Productos.innerHTML += '<i class="far fa-hand-point-right">' + listadoProductos[i] + '<br/>';
                 }
 
                 suma.innerHTML = "$ " + totalPagar.toFixed(2);
 
             }
+        } // FUNCION CALCULAR
+
+        function mostrarTours() {
+            var boletosHistorica = parseInt(Bogota_Historica.value, 10) || 0,
+                boletosCultural = parseInt(Bogota_Cultural.value, 10) || 0,
+                boletosMontanismo = parseInt(montanismo.value, 10) || 0;
+            var toursElegidos = [];
+
+            if (boletosHistorica > 0) {
+                toursElegidos.push('historica');
+            }
+
+            if (boletosCultural > 0) {
+                toursElegidos.push('cultural');
+            }
+
+            if (boletosMontanismo > 0) {
+                toursElegidos.push('montanismo');
+            }
+
+            for (var i = 0; i < toursElegidos.length; i++) {
+                document.getElementById(toursElegidos[i]).style.display = 'block';
+            }
+
         }
 
     }); //DOM CONTENT LOADED
