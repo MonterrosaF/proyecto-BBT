@@ -15,8 +15,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Aleo|Roboto+Condensed|Slabo+27px" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+
 </head>
 
 <body>
@@ -25,7 +29,7 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  
+
   <header class="site-header">
     <div class="hero">
       <div class="contenido-header">
@@ -38,10 +42,10 @@
         </nav>
         <div class="informacion-evento">
           <div class="clearfix">
-              <p class="fecha"><i class="fa fa-calendar"></i> 2019-16 ENE</p>
-              <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Bogotá, CO</p>
+            <p class="fecha"><i class="fa fa-calendar"></i> 2019-16 ENE</p>
+            <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Bogotá, CO</p>
           </div>
-          <h1 class="nombre-sitio">BBT</h1>
+          <h1 class="nombre-sitio">BOGOTÁ BIKE TOURS</h1>
           <p class="slogan">la mejor pagina de <span>tours por Bogotá</span></p>
         </div>
       </div>
@@ -61,7 +65,7 @@
       </div>
 
       <nav class="navegacion-principal clearfix">
-        <a href="#">Tours</a>
+        <a href="Tours.html">Tours</a>
         <a href="#">Historia</a>
         <a href="registro.html">Inscripciones</a>
       </nav>
@@ -71,13 +75,19 @@
   <section class="seccion contenedor">
     <h2>La mejor pagina para sus tours</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra leo vel ex finibus bibendum. Cras posuere turpis metus, a posuere elit viverra ac. Sed aliquam risus eget turpis gravida ultrices. Ut cursus ligula a quam semper, eu placerat diam suscipit. Nulla risus felis, suscipit sed dolor vel, tempus congue risus. Curabitur malesuada feugiat maximus. Duis varius dui quis urna ultrices, vitae convallis metus cursus. Suspendisse fermentum, enim a dignissim auctor, erat erat facilisis risus, a dapibus dui ipsum id augue. Nulla facilisi. Sed gravida molestie erat, id malesuada mauris varius vitae. Vivamus vitae libero quis mi tempor varius. Quisque magna dolor, rhoncus nec lobortis non, feugiat vel magna.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra leo vel ex finibus bibendum. Cras
+      posuere turpis metus, a posuere elit viverra ac. Sed aliquam risus eget turpis gravida ultrices. Ut cursus ligula
+      a quam semper, eu placerat diam suscipit. Nulla risus felis, suscipit sed dolor vel, tempus congue risus.
+      Curabitur malesuada feugiat maximus. Duis varius dui quis urna ultrices, vitae convallis metus cursus.
+      Suspendisse fermentum, enim a dignissim auctor, erat erat facilisis risus, a dapibus dui ipsum id augue. Nulla
+      facilisi. Sed gravida molestie erat, id malesuada mauris varius vitae. Vivamus vitae libero quis mi tempor
+      varius. Quisque magna dolor, rhoncus nec lobortis non, feugiat vel magna.
     </p>
   </section>
 
   <section class="programa">
     <div class="contenedor-video">
-      <video autoplay loop muted poster="ciclismo.jpg">
+      <video autoplay loop muted>
         <source src="video/Mountain_Biking1.mp4" type="video/mp4">
         <source src="video/Mountain_Biking1.ogg" type="video/webm">
         <source src="video/Mountain_Biking1.ogg" type="video/ogg">
@@ -89,25 +99,57 @@
         <div class="programa-evento">
           <h2>Programa del tour</h2>
           <nav class="menu-programa">
-            <a href="#descripcion"><i class="fas fa-clipboard-list"></i>Descripción</a>
-            <a href="#recorrido"><i class="fas fa-map-marker-alt"></i>Recorrido</a>
-            <a href="#precio"><i class="fas fa-dollar-sign"></i>Precio</a>
+            <a href="#bogota-cultural"><i class="fab fa-angellist"></i>Bogotá Cultural</a>
+            <a href="#bogota-historica"><i class="fas fa-building"></i>Bogotá Historica</a>
+            <a href="#ciclomon"><i class="fas fa-bicycle"></i>Ciclomontañismo</a>
           </nav>
 
-          <div id="descripcion" class="info-curso ocultar clearfix">
-              <div class="detalle-evento">
-                  <h3>Bogotá Historica</h3>
-                  <p><i class="fa fa-calendar"></i>  Sabados y Domingos</p>
-                  <p><i class="far fa-clock"></i>  12:00 - 14:00</p>
-                  <p><i class="fas fa-bicycle"></i>  Oficina BBT</p>
-              </div>
-              <div class="detalle-evento">
-                  <h3>Bogotá Cultural</h3>
-                  <p><i class="fa fa-calendar"></i> Sabados y Domingos</p>
-                  <p><i class="far fa-clock"></i> 11:00 - 13:00</p>
-                  <p><i class="fas fa-bicycle"></i> Plaza de Bolivar</p>
-              </div>
-              <a href="#" class="button float-right">VER TODOS</a>
+          <div id="bogota-cultural" class="info-curso ocultar clearfix">
+            <div class="detalle-evento">
+              <h3>Bogotá Cultural (antes del almuerzo)</h3>
+              <p><i class="fa fa-calendar"></i> Sabados y Domingos</p>
+              <p><i class="far fa-clock"></i> 10:00 - 12:00</p>
+              <p><i class="fas fa-bicycle"></i> Oficina BBT - Plaza de Bolivar</p>
+            </div>
+            <div class="detalle-evento">
+              <h3>Bogotá Cultural (despues del almuerzo)</h3>
+              <p><i class="fa fa-calendar"></i> Sabados y Domingos</p>
+              <p><i class="far fa-clock"></i> 12:00 - 14:00</p>
+              <p><i class="fas fa-bicycle"></i> Plaza de Bolivar - Oficina BBT</p>
+            </div>
+            <a href="#" class="button float-right">VER MAS</a>
+          </div>
+
+          <div id="bogota-historica" class="info-curso ocultar clearfix">
+            <div class="detalle-evento">
+              <h3>Bogotá Historica (Antes del almuerzo)</h3>
+              <p><i class="fa fa-calendar"></i> Sabados y Domingos</p>
+              <p><i class="far fa-clock"></i> 11:00 - 13:00</p>
+              <p><i class="fas fa-bicycle"></i> Oficina BBT - Planetario Distrital </p>
+            </div>
+            <div class="detalle-evento">
+              <h3>Bogotá Historica (despues del almuerzo)</h3>
+              <p><i class="fa fa-calendar"></i> Sabados y Domingos</p>
+              <p><i class="far fa-clock"></i> 13:00 - 15:00</p>
+              <p><i class="fas fa-bicycle"></i> Planetario Distrital - Oficina BBT</p>
+            </div>
+            <a href="#" class="button float-right">VER MAS</a>
+          </div>
+
+          <div id="ciclomon" class="info-curso ocultar clearfix">
+            <div class="detalle-evento">
+              <h3>Tour Ciclomontañismo (primera parte)</h3>
+              <p><i class="fa fa-calendar"></i> Sabados y Domingos</p>
+              <p><i class="far fa-clock"></i> 10:00 - 14:00</p>
+              <p><i class="fas fa-bicycle"></i> Oficina BBT - Montaña 1</p>
+            </div>
+            <div class="detalle-evento">
+              <h3>Tour Ciclomontañismo (segunda parte)</h3>
+              <p><i class="fa fa-calendar"></i> Sabados y Domingos</p>
+              <p><i class="far fa-clock"></i> 14:00 - 17:00</p>
+              <p><i class="fas fa-bicycle"></i> Montaña 1 - Montaña 2 - Oficina BBT</p>
+            </div>
+            <a href="#" class="button float-right">VER MAS</a>
           </div>
         </div>
       </div>
@@ -117,52 +159,60 @@
   <section class="invitados contenedor seccion">
     <h2>Nuestros Guias Turisticos</h2>
     <ul class="lista-invitados clearfix">
-        <li>
-            <div class="invitado">
-              <img src="img/invitado1.jpg" alt="imagen guia">
-              <p>Guia 1</p>
-            </div>
-        </li>
-        <li>
-            <div class="invitado">
-              <img src="img/invitado2.jpg" alt="imagen guia">
-              <p>Guia 2</p>
-            </div>
-        </li>
-        <li>
-            <div class="invitado">
-              <img src="img/invitado3.jpg" alt="imagen guia">
-              <p>Guia 3</p>
-            </div>
-        </li>
-        <li>
-            <div class="invitado">
-              <img src="img/invitado4.jpg" alt="imagen guia">
-              <p>Guia 4</p>
-            </div>
-        </li>
-        <li>
-            <div class="invitado">
-              <img src="img/invitado5.jpg" alt="imagen guia">
-              <p>Guia 5</p>
-            </div>
-        </li>
-        <li>
-            <div class="invitado">
-              <img src="img/invitado6.jpg" alt="imagen guia">
-              <p>Guia 6</p>
-            </div>
-          </li>
+      <li>
+        <div class="invitado">
+          <img src="img/invitado1.jpg" alt="imagen guia">
+          <p>Guia 1</p>
+        </div>
+      </li>
+      <li>
+        <div class="invitado">
+          <img src="img/invitado2.jpg" alt="imagen guia">
+          <p>Guia 2</p>
+        </div>
+      </li>
+      <li>
+        <div class="invitado">
+          <img src="img/invitado3.jpg" alt="imagen guia">
+          <p>Guia 3</p>
+        </div>
+      </li>
+      <li>
+        <div class="invitado">
+          <img src="img/invitado4.jpg" alt="imagen guia">
+          <p>Guia 4</p>
+        </div>
+      </li>
+      <li>
+        <div class="invitado">
+          <img src="img/invitado5.jpg" alt="imagen guia">
+          <p>Guia 5</p>
+        </div>
+      </li>
+      <li>
+        <div class="invitado">
+          <img src="img/invitado6.jpg" alt="imagen guia">
+          <p>Guia 6</p>
+        </div>
+      </li>
     </ul>
   </section>
 
   <div class="contador parallax">
     <div class="contenedor">
       <ul class="resumen-evento clearfix">
-        <li><p class="numero">6</p> Guias Turisticos</li>
-        <li><p class="numero">3</p> Rutas</li>
-        <li><p class="numero">3</p> Días a la semana</li>
-        <li><p class="numero">∞</p> Experiencias</li>
+        <li>
+          <p class="numero"></p> Guias Turisticos
+        </li>
+        <li>
+          <p class="numero"></p> Rutas
+        </li>
+        <li>
+          <p class="numero"></p> Días a la semana
+        </li>
+        <li>
+          <p class="numero"></p> Tours
+        </li>
       </ul>
     </div>
   </div>
@@ -220,7 +270,8 @@
     <div class="testimoniales contenedor clearfix">
       <div class="testimonial">
         <blockquote>
-          <p>Sed aliquam commodo est ut vulputate. Nulla pulvinar interdum tincidunt. Maecenas eu dignissim ipsum, non ultrices enim. Aenean sagittis feugiat augue at facilisis.</p>
+          <p>Sed aliquam commodo est ut vulputate. Nulla pulvinar interdum tincidunt. Maecenas eu dignissim ipsum, non
+            ultrices enim. Aenean sagittis feugiat augue at facilisis.</p>
           <footer class="info-testimonial clearfix">
             <img src="img/testimonial.jpg" alt="imagen testimonial">
             <cite>Wilmer Garcia <span>Guia Turistico BBT</span></cite>
@@ -229,7 +280,8 @@
       </div>
       <div class="testimonial">
         <blockquote>
-          <p>Sed aliquam commodo est ut vulputate. Nulla pulvinar interdum tincidunt. Maecenas eu dignissim ipsum, non ultrices enim. Aenean sagittis feugiat augue at facilisis.</p>
+          <p>Sed aliquam commodo est ut vulputate. Nulla pulvinar interdum tincidunt. Maecenas eu dignissim ipsum, non
+            ultrices enim. Aenean sagittis feugiat augue at facilisis.</p>
           <footer class="info-testimonial clearfix">
             <img src="img/testimonial.jpg" alt="imagen testimonial">
             <cite>Wilmer Garcia <span>Guia Turistico BBT</span></cite>
@@ -238,7 +290,8 @@
       </div>
       <div class="testimonial">
         <blockquote>
-          <p>Sed aliquam commodo est ut vulputate. Nulla pulvinar interdum tincidunt. Maecenas eu dignissim ipsum, non ultrices enim. Aenean sagittis feugiat augue at facilisis.</p>
+          <p>Sed aliquam commodo est ut vulputate. Nulla pulvinar interdum tincidunt. Maecenas eu dignissim ipsum, non
+            ultrices enim. Aenean sagittis feugiat augue at facilisis.</p>
           <footer class="info-testimonial clearfix">
             <img src="img/testimonial.jpg" alt="imagen testimonial">
             <cite>Wilmer Garcia <span>Guia Turistico BBT</span></cite>
@@ -257,13 +310,21 @@
   </div>
 
   <section class="seccion">
-    <h2>PROXIMO EVENTO:</h2>
+    <h2>PROXIMO EVENTO ESPECIAL:</h2>
     <div class="cuenta-regresiva contenedor">
       <ul class="clearfix">
-        <li><p class="numero">6</p> Días</li>
-        <li><p class="numero">7</p> Horas</li>
-        <li><p class="numero">5</p> Minutos</li>
-        <li><p class="numero">6 </p>Segundos</li>
+        <li>
+          <p id="dias" class="numero"></p> Días
+        </li>
+        <li>
+          <p id="horas" class="numero"></p> Horas
+        </li>
+        <li>
+          <p id="minutos" class="numero"></p> Minutos
+        </li>
+        <li>
+          <p id="segundos" class="numero"></p>Segundos
+        </li>
       </ul>
     </div>
   </section>
@@ -272,14 +333,19 @@
     <div class="contenedor clearfix">
       <div class="footer-informacion">
         <h3>SOBRE <span>BBT</span></h3>
-        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin a dolor sit amet magna porttitor efficitur. Morbi libero nulla, rutrum ac dolor sed, tincidunt hendrerit metus. Morbi vitae orci neque. Nunc efficitur arcu dui, non consequat dui tincidunt ullamcorper. </p>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin a dolor
+          sit amet magna porttitor efficitur. Morbi libero nulla, rutrum ac dolor sed, tincidunt hendrerit metus. Morbi
+          vitae orci neque. Nunc efficitur arcu dui, non consequat dui tincidunt ullamcorper. </p>
       </div>
       <div class="ultimos-tweets">
         <h3>ULTIMOS <span>tweets</span></h3>
         <ul>
-          <li>Integer nec neque auctor, cursus purus sit amet, sagittis nibh. Maecenas nec lorem sem. Nunc vestibulum dapibus dapibus.</li>
-          <li>Integer nec neque auctor, cursus purus sit amet, sagittis nibh. Maecenas nec lorem sem. Nunc vestibulum dapibus dapibus.</li>
-          <li>Integer nec neque auctor, cursus purus sit amet, sagittis nibh. Maecenas nec lorem sem. Nunc vestibulum dapibus dapibus.</li>
+          <li>Integer nec neque auctor, cursus purus sit amet, sagittis nibh. Maecenas nec lorem sem. Nunc vestibulum
+            dapibus dapibus.</li>
+          <li>Integer nec neque auctor, cursus purus sit amet, sagittis nibh. Maecenas nec lorem sem. Nunc vestibulum
+            dapibus dapibus.</li>
+          <li>Integer nec neque auctor, cursus purus sit amet, sagittis nibh. Maecenas nec lorem sem. Nunc vestibulum
+            dapibus dapibus.</li>
         </ul>
       </div>
       <div class="menu">
@@ -295,16 +361,23 @@
     </div>
 
     <p class="copyright">
-      todos los derechos reservados BBT 2019.<br/>
-      universidad ecci 
+      todos los derechos reservados BBT 2019.<br />
+      universidad ecci
     </p>
   </footer>
 
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.animateNumber.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
