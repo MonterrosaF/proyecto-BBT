@@ -1,0 +1,46 @@
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 1', '2019-02-09', '10:00:00', '3', '1', 'taller_01');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 2', '2019-02-09', '11:30:00', '3', '2', 'taller_02');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 3', '2019-02-09', '13:00:00', '3', '3', 'taller_03');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 4', '2019-02-09', '14:30:00', '3', '4', 'taller_04');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 5', '2019-02-09', '15:00:00', '3', '5', 'taller_05');
+
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Evento 1', '2019-02-09', '10:00:00', '2', '6', 'conf_01');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Evento 2', '2019-02-09', '13:00:00', '2', '1', 'conf_02');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Evento 3', '2019-02-09', '15:00:00', '2', '2', 'conf_03');
+
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Lugar 1', '2019-02-09', '13:00:00', '1', '6', 'sem_01');
+
+
+
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 6', '2019-02-10', '10:00:00', '3', '1', 'taller_06');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 7', '2019-02-10', '12:00:00', '3', '2', 'taller_07');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 8', '2019-02-10', '14:00:00', '3', '3', 'taller_08');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 9', '2019-02-10', '15:00:00', '3', '4', 'taller_09');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 10', '2019-02-10', '16:00:00', '3', '5', 'taller_10');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 11', '2019-02-10', '27:00:00', '3', '6', 'taller_11');
+
+
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Evento 4', '2019-02-10', '10:00:00', '2', '6', 'conf_04');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Evento 5', '2019-02-10', '13:00:00', '2', '1', 'conf_05');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Evento 6', '2019-02-10', '15:00:00', '2', '2', 'conf_06');
+
+
+
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Lugar 2', '2019-02-10', '10:00:00', '1', '3', 'sem_02');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Lugar 3', '2019-02-10', '13:00:00', '1', '5', 'sem_03');
+
+
+
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 13', '2019-02-11', '10:00:00', '3', '1', 'taller_12');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 14', '2019-02-11', '12:00:00', '3', '2', 'taller_13');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 15', '2019-02-11', '13:00:00', '3', '3', 'taller_14');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 16', '2019-02-11', '14:00:00', '3', '4', 'taller_15');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Visita 17', '2019-02-11', '15:00:00', '3', '5', 'taller_16');
+
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Evento 7', '2019-02-11', '10:00:00', '2', '6', 'conf_07');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Evento 8', '2019-02-11', '13:00:00', '2', '2', 'conf_08');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Evento 9', '2019-02-11', '17:00:00', '2', '3', 'conf_09');
+
+
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Lugar 4', '2019-02-11', '10:00:00', '1', '4', 'sem_04');
+INSERT INTO `bbt`.`eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES (NULL, 'Lugar 5', '2019-02-11', '17:00:00', '1', '1', 'sem_05');
