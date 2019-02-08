@@ -53,14 +53,14 @@
                             <i class="fa fa-calendar"></i>
                             <?php 
                             setlocale(LC_TIME, 'spanish');
-                            echo strftime("%A, %d de %B del %Y", strtotime($dia)); ?>
+                            echo strftime("%d de %B del %Y", strtotime($dia)); ?>
                         </h3>
 
                         <?php foreach ($lista_eventos as $evento) { ?>
                             <div class="dia">
                                 <p class="titulo"> <?php echo $evento['titulo']?> </p>
                                 <p class="hora">
-                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    <i class="fas fa-clock"></i>
                                     <?php echo $evento['fecha'] . " " . $evento['hora']?>
                                 </p>
                                 <p> 
@@ -71,8 +71,8 @@
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                     <?php echo $evento['invitado']?>
                                  </p> 
-
-                            </div>
+                                
+                            </div> 
                         <?php                } ?>
                     <?php                 } ?>
                 
