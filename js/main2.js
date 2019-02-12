@@ -24,6 +24,11 @@
 $(function () {
 
     jQuery(document).ready(function ($) {
+
+        //ColorBox
+
+        $('.invitado-info').colorbox({inline:true, width:"50%"});
+
         // LETTERING
         $('.nombre-sitio').lettering();
 
@@ -83,5 +88,7 @@ $(function () {
             $('#minutos').html(event.strftime('%M'));
             $('#segundos').html(event.strftime('%S'));
         });
+
+
     });
 });

@@ -167,7 +167,7 @@
 
             }
         }
-
+        $('.invitado-info').colorbox({inline:true, width:"50%"});
     }); //DOM CONTENT LOADED
 })();
 

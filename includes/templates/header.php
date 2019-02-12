@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/colorbox.css">
   <link href="https://fonts.googleapis.com/css?family=Aleo|Roboto+Condensed|Slabo+27px" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous">
@@ -68,7 +69,7 @@
 
       <nav class="navegacion-principal clearfix">
         <a href="Tours.php">Tours</a>
-        <a href="historia.php">Historia</a>
+        <a href="guias.php">Guias</a>
         <a href="calendario.php">Calendario</a>
         <a href="registro.php">Inscripciones</a>
       </nav>

@@ -53,7 +53,7 @@
         
     </section>
 
-    <div id="mapa" class="mapa">
+    <div style="display:none" id="mapa" class="mapa">
 
 </div>
 
