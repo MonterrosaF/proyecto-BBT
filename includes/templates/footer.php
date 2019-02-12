@@ -45,6 +45,7 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/jquery.animateNumber.js"></script>
   <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/lightbox.js"></script>
   <script src="js/jquery.lettering.js"></script>
 
   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>

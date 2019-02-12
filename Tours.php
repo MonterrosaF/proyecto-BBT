@@ -50,6 +50,11 @@
                 <img src="img/cicla/thumbs/cicla10.jpg">
             </a>
         </div>
+        
     </section>
+
+    <div id="mapa" class="mapa">
+
+</div>
 
     <?php include_once 'includes/templates/footer.php'; ?>
