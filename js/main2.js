@@ -27,10 +27,16 @@ jQuery(function ($) {
 
         //ColorBox
 
-        $('.invitado-info').colorbox({ inline: true, width: "50%" });
+        // $('.invitado-info').colorbox({ inline: true, width: "50%" });
 
         // LETTERING
-        $('.nombre-sitio').lettering();
+        // $('.nombre-sitio').lettering();
+
+        //Agragando clase a menu
+
+        $('body.Tours .navegacion-principal a:contains("Tours")').addClass('activo');
+        $('body.guias .navegacion-principal a:contains("Guias")').addClass('activo');
+        $('body.calendario .navegacion-principal a:contains("Calendario")').addClass('activo');
 
         //MENU FIJO
 

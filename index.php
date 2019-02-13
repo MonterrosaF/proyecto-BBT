@@ -83,7 +83,7 @@
     </div>
   </section>
 
-
+  <?php include_once 'includes/templates/guias.php'; ?>
 
   <div class="contador parallax">
     <div class="contenedor">

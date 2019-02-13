@@ -18,7 +18,7 @@
   <?php 
     $archivo = basename($_SERVER['PHP_SELF']);
     $pagina = str_replace(".php", "", $archivo);
-    if($pagina == 'guias'){
+    if($pagina == 'guias' || $pagina == 'index'){
       echo '<link rel="stylesheet" href="css/colorbox.css">';
     } else if ($pagina == 'Tours'){
       echo '<link rel="stylesheet" href="css/lightbox.css">';
@@ -34,7 +34,7 @@
 
 </head>
 
-<body>
+<body class="<?php echo $pagina; ?>">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -50,6 +50,7 @@
           <a href="#"><i class="fab fa-pinterest-p"></i></a>
           <a href="#"><i class="fab fa-youtube"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
+          
         </nav>
         <div class="informacion-evento">
           <div class="clearfix">

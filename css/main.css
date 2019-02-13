@@ -866,7 +866,7 @@ textarea {
 
     /*** Tours ***/
 
-    body.tour .navegacion-principal .activo {
+    .navegacion-principal .activo {
         border-bottom: 2px solid #fe4918
 
     }
