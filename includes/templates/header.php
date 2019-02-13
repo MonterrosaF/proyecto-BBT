@@ -14,8 +14,17 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="css/lightbox.css">
-  <link rel="stylesheet" href="css/colorbox.css">
+
+  <?php 
+    $archivo = basename($_SERVER['PHP_SELF']);
+    $pagina = str_replace(".php", "", $archivo);
+    if($pagina == 'guias'){
+      echo '<link rel="stylesheet" href="css/colorbox.css">';
+    } else if ($pagina == 'Tours'){
+      echo '<link rel="stylesheet" href="css/lightbox.css">';
+    }
+  ?>
+
   <link href="https://fonts.googleapis.com/css?family=Aleo|Roboto+Condensed|Slabo+27px" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous">

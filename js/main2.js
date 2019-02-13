@@ -21,13 +21,13 @@
     }); //DOM CONTENT LOADED
 })();
 
-$(function () {
+jQuery(function ($) {
 
     jQuery(document).ready(function ($) {
 
         //ColorBox
 
-        $('.invitado-info').colorbox({inline:true, width:"50%"});
+        $('.invitado-info').colorbox({ inline: true, width: "50%" });
 
         // LETTERING
         $('.nombre-sitio').lettering();
@@ -73,10 +73,18 @@ $(function () {
 
         // ANIMACINOES PARA LOS NUMEROS
 
-        $('.resumen-evento li:nth-child(1) p').animateNumber({ number: 6 }, 1200);
-        $('.resumen-evento li:nth-child(2) p').animateNumber({ number: 15 }, 2000);
-        $('.resumen-evento li:nth-child(3) p').animateNumber({ number: 3 }, 600);
-        $('.resumen-evento li:nth-child(4) p').animateNumber({ number: 3 }, 500);
+        var resumenLista = jQuery('.resumen-evento');
+        if (resumenLista.length > 0) {
+            $('.resumen-evento').waypoint(function () {
+                $('.resumen-evento li:nth-child(1) p').animateNumber({ number: 6 }, 1200);
+                $('.resumen-evento li:nth-child(2) p').animateNumber({ number: 15 }, 2000);
+                $('.resumen-evento li:nth-child(3) p').animateNumber({ number: 3 }, 600);
+                $('.resumen-evento li:nth-child(4) p').animateNumber({ number: 3 }, 500);
+            }, {
+                offset:'60%'
+            });
+        }
+
 
         //ANIMACION CONTADOR COUNTDOWN
 
