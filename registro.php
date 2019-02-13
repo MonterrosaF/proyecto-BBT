@@ -2,7 +2,7 @@
 
   <section class="seccion contenedor">
       <h2>REGISTRO DE USUARIOS</h2>
-      <form action="index.html" id="registro" class="registro" method="POST">
+      <form action="validar_registro.php" id="registro" class="registro" method="POST">
           <div id="datos_usuario" class="registro caja clearfix">
             <div class="campo">
                 <label for="nombre">Nombre</label>
@@ -32,7 +32,7 @@
                     </ul>
                     <div class="orden">
                         <label for="Bogota_Historica">Cantidad de personas</label>
-                        <input type="number" min="0" id="Bogota_Historica" size="3" placeholder="0">
+                        <input type="number" min="0" id="Bogota_Historica" size="3" name="boletos[]" placeholder="0">
                     </div>
                   </div>
                 </li>
@@ -47,7 +47,7 @@
                     </ul>
                     <div class="orden">
                         <label for="Bogota_Cultural">Cantidad de personas</label>
-                        <input type="number" min="0" id="Bogota_Cultural" size="3" placeholder="0">
+                        <input type="number" min="0" id="Bogota_Cultural" size="3" name="boletos[]" placeholder="0">
                     </div>
                   </div>
                 </li>
@@ -62,7 +62,7 @@
                     </ul>
                     <div class="orden">
                         <label for="montanismo">Cantidad de personas</label>
-                        <input type="number" min="0" id="montanismo" size="3" placeholder="0">
+                        <input type="number" min="0" id="montanismo" size="3" name="boletos[]" placeholder="0">
                     </div>
                   </div>
                 </li>
@@ -76,22 +76,22 @@
                 <h4>Tour Bogotá Historica</h4>
                 <div>
                   <p>Actividades:</p>
-                  <label><input type="checkbox" name="registro" id="taller_01" value="taller_01"><time>12:00</time> Reunión previa al tour con el guia</label>
-                  <label><input type="checkbox" name="registro" id="taller_02" value="taller_02"><time>12:05</time> Inicio del recorrido</label>
-                  <label><input type="checkbox" name="registro" id="taller_03" value="taller_03"><time>12:30</time> Descripción lugares reconocidos</label>
-                  <label><input type="checkbox" name="registro" id="taller_04" value="taller_04"><time>13:00</time> Pausa para almorzar</label>
-                  <label><input type="checkbox" name="registro" id="taller_05" value="taller_05"><time>13:30</time> Regreso a las oficinas BBT</label>
-                  <label><input type="checkbox" name="registro" id="taller_06" value="taller_06"><time>14:00</time> Charla de finalizacion del tour</label>
+                  <label><input type="checkbox" name="registro[]" id="taller_01" value="taller_01"><time>12:00</time> Reunión previa al tour con el guia</label>
+                  <label><input type="checkbox" name="registro[]" id="taller_02" value="taller_02"><time>12:05</time> Inicio del recorrido</label>
+                  <label><input type="checkbox" name="registro[]" id="taller_03" value="taller_03"><time>12:30</time> Descripción lugares reconocidos</label>
+                  <label><input type="checkbox" name="registro[]" id="taller_04" value="taller_04"><time>13:00</time> Pausa para almorzar</label>
+                  <label><input type="checkbox" name="registro[]" id="taller_05" value="taller_05"><time>13:30</time> Regreso a las oficinas BBT</label>
+                  <label><input type="checkbox" name="registro[]" id="taller_06" value="taller_06"><time>14:00</time> Charla de finalizacion del tour</label>
                 </div>
                 <div>
                   <p>Restaurantes:</p>
-                  <label><input type="checkbox" name="registro" id="conf_01" value="conf_01"><time>12:30</time>Toma de chicha en sector reconocido del lugar</label>
-                  <label><input type="checkbox" name="registro" id="conf_02" value="conf_02"><time>12:40</time>Visita a casa de postres reconocido del lugar</label>
-                  <label><input type="checkbox" name="registro" id="conf_03" value="conf_03"><time>13:00</time>Almuerzo en restaurante sorpresa</label>
+                  <label><input type="checkbox" name="registro[]" id="conf_01" value="conf_01"><time>12:30</time>Toma de chicha en sector reconocido del lugar</label>
+                  <label><input type="checkbox" name="registro[]" id="conf_02" value="conf_02"><time>12:40</time>Visita a casa de postres reconocido del lugar</label>
+                  <label><input type="checkbox" name="registro[]" id="conf_03" value="conf_03"><time>13:00</time>Almuerzo en restaurante sorpresa</label>
                 </div>
                 <div>
                   <p>Obsequios</p>
-                  <label><input type="checkbox" name="registro" id="sem_01"><time>14:00</time>Llaveros de Bogotá</label>
+                  <label><input type="checkbox" name="registro[]" id="sem_01"><time>14:00</time>Llaveros de Bogotá</label>
                 </div>
               </div>
 
@@ -99,22 +99,22 @@
                 <h4>Tour Bogotá Cultural</h4>
                   <div>
                     <p>Actividades:</p>
-                    <label><input type="checkbox" name="registro" id="taller_07" value="taller_07"><time>11:00</time> Reunión previa al tour con el guia</label>
-                    <label><input type="checkbox" name="registro" id="taller_08" value="taller_08"><time>11:05</time> Inicio del recorrido</label>
-                    <label><input type="checkbox" name="registro" id="taller_09" value="taller_09"><time>11:30</time> Descripción lugares reconocidos</label>
-                    <label><input type="checkbox" name="registro" id="taller_10" value="taller_10"><time>12:00</time> Pausa para almorzar</label>
-                    <label><input type="checkbox" name="registro" id="taller_11" value="taller_11"><time>12:30</time> Regreso a las oficinas BBT</label>
-                    <label><input type="checkbox" name="registro" id="taller_12" value="taller_12"><time>13:00</time> Charla de finalizacion del tour</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_07" value="taller_07"><time>11:00</time> Reunión previa al tour con el guia</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_08" value="taller_08"><time>11:05</time> Inicio del recorrido</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_09" value="taller_09"><time>11:30</time> Descripción lugares reconocidos</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_10" value="taller_10"><time>12:00</time> Pausa para almorzar</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_11" value="taller_11"><time>12:30</time> Regreso a las oficinas BBT</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_12" value="taller_12"><time>13:00</time> Charla de finalizacion del tour</label>
                   </div>
                   <div>
                     <p>Restaurantes:</p>
-                    <label><input type="checkbox" name="registro" id="conf_04" value="conf_04"><time>11:30</time> Toma de chicha en sector reconocido del lugar</label>
-                    <label><input type="checkbox" name="registro" id="conf_05" value="conf_05"><time>11:40</time> Visita a casa de postres reconocido del lugar</label>
-                    <label><input type="checkbox" name="registro" id="conf_06" value="conf_06"><time>12:00</time> Almuerzo en restaurante sorpresa</label>
+                    <label><input type="checkbox" name="registro[]" id="conf_04" value="conf_04"><time>11:30</time> Toma de chicha en sector reconocido del lugar</label>
+                    <label><input type="checkbox" name="registro[]" id="conf_05" value="conf_05"><time>11:40</time> Visita a casa de postres reconocido del lugar</label>
+                    <label><input type="checkbox" name="registro[]" id="conf_06" value="conf_06"><time>12:00</time> Almuerzo en restaurante sorpresa</label>
                   </div>
                   <div>
                     <p>Obsequios</p>
-                    <label><input type="checkbox" name="registro" id="sem_02" value="sem_02"><time>13:00</time> Llaveros y camisetas de Bogotá</label>
+                    <label><input type="checkbox" name="registro[]" id="sem_02" value="sem_02"><time>13:00</time> Llaveros y camisetas de Bogotá</label>
                   </div>
               </div>
 
@@ -122,20 +122,20 @@
                 <h4>Tour Ciclomontañismo</h4>
                   <div>
                     <p>Actividades:</p>
-                    <label><input type="checkbox" name="registro" id="taller_13" value="taller_13"><time>11:00</time> Reunión previa al tour con el guia</label>
-                    <label><input type="checkbox" name="registro" id="taller_14" value="taller_14"><time>11:05</time> Entrega elementos de prontección</label>
-                    <label><input type="checkbox" name="registro" id="taller_15" value="taller_15"><time>11:10</time> Inicio del recorrido</label>
-                    <label><input type="checkbox" name="registro" id="taller_16" value="taller_16"><time>12:30</time> Descripción lugares reconocidos</label>
-                    <label><input type="checkbox" name="registro" id="taller_17" value="taller_17"><time>13:00</time> Inicio primera montaña</label>
-                    <label><input type="checkbox" name="registro" id="taller_18" value="taller_18"><time>14:00</time> Inicio Segunda montaña</label>
-                    <label><input type="checkbox" name="registro" id="taller_19" value="taller_19"><time>15:00</time> Inicio tercera montaña</label>
-                    <label><input type="checkbox" name="registro" id="taller_20" value="taller_20"><time>16:00</time> Pausa para almorzar</label>
-                    <label><input type="checkbox" name="registro" id="taller_21" value="taller_21"><time>16:30</time> Regreso a las oficinas BBT</label>
-                    <label><input type="checkbox" name="registro" id="taller_22" value="taller_22"><time>17:00</time> Charla de finalizacion del tour</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_13" value="taller_13"><time>11:00</time> Reunión previa al tour con el guia</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_14" value="taller_14"><time>11:05</time> Entrega elementos de prontección</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_15" value="taller_15"><time>11:10</time> Inicio del recorrido</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_16" value="taller_16"><time>12:30</time> Descripción lugares reconocidos</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_17" value="taller_17"><time>13:00</time> Inicio primera montaña</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_18" value="taller_18"><time>14:00</time> Inicio Segunda montaña</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_19" value="taller_19"><time>15:00</time> Inicio tercera montaña</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_20" value="taller_20"><time>16:00</time> Pausa para almorzar</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_21" value="taller_21"><time>16:30</time> Regreso a las oficinas BBT</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_22" value="taller_22"><time>17:00</time> Charla de finalizacion del tour</label>
                   </div>
                   <div>
                     <p>Restaurantes:</p>
-                    <label><input type="checkbox" name="registro" id="conf_07" value="conf_07"><time>11:30</time> Almuerzo "Paseo de olla"</label>
+                    <label><input type="checkbox" name="registro[]" id="conf_07" value="conf_07"><time>11:30</time> Almuerzo "Paseo de olla"</label>
                   </div>
                   <div>
                     <p>Obsequios</p>
@@ -156,15 +156,15 @@
                 </div> <!-- Orden -->
                 <div class="orden">
                   <label for="stickers">Paquete de stickers $5000 <small>(Lugares historicos y personajes importantes)</small></label>
-                  <input type="number" min="0" id="stickers" size="3" placeholder="0">
+                  <input type="number" min="0" name="sticker_evento" id="stickers" size="3" placeholder="0">
                 </div><!-- Orden -->
                   <div class="orden">
                     <label for="regalo">Seleccione un regalo</label><br/>
-                    <select id="regalo" required>
+                    <select id="regalo" name="regalo" required>
                       <option value="">- Seleccione un regalo -</option>
-                      <option value="ETI">Poster</option>
-                      <option value="PUL">Manilla</option>
-                      <option value="PLU">Esfero</option>
+                      <option value="1">Poster</option>
+                      <option value="2">Manilla</option>
+                      <option value="3">Esfero</option>
                     </select>
                   </div><!-- Orden -->
 
@@ -178,8 +178,9 @@
                 </div> <!-- Lista productos -->
                 <p>Total:</p>
                 <div id="suma-total">
-                  <input id="btnRegistro" type="submit" class="button" value="Pagar">
-                </div> <!-- suma total-->
+                  
+                </div> 
+                <input id="btnRegistro" type="submit" name="submit" class="button" value="Pagar"><!-- suma total-->
               </div> <!-- Total -->
             </div> <!-- caja resumen-->
           </div> <!-- Resumen -->
