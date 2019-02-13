@@ -76,7 +76,7 @@
               <p><i class="far fa-clock"></i> 14:00 - 17:00</p>
               <p><i class="fas fa-bicycle"></i> Montaña 1 - Montaña 2 - Oficina BBT</p>
             </div>
-            <a href="#" class="button float-right">VER MAS</a>
+            <a href="calendario.php" class="button float-right">VER MAS</a>
           </div>
         </div>
       </div>
