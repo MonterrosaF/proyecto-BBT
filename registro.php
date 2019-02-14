@@ -118,7 +118,7 @@
                   </div>
               </div>
 
-              <div id="montanismo" class="contenido-dia clearfix">
+              <div id="Bogota_montanismo" class="contenido-dia clearfix">
                 <h4>Tour Ciclomontañismo</h4>
                   <div>
                     <p>Actividades:</p>
@@ -139,7 +139,7 @@
                   </div>
                   <div>
                     <p>Obsequios</p>
-                    <!-- <label><input type="checkbox" name="registro" id="sem_03" value="sem_03"><time>13:00</time> Llaveros, camisetas y recuerdos de Bogotá</label> -->
+                    <label><input type="checkbox" name="registro" id="sem_03" value="sem_03"><time>13:00</time> Llaveros, camisetas y recuerdos de Bogotá</label>
                   </div>
               </div> <!-- domingo -->
 
@@ -180,6 +180,8 @@
                 <div id="suma-total">
                   
                 </div> 
+
+                <input type="hidden" name="total_pedido" id="total_pedido">
                 <input id="btnRegistro" type="submit" name="submit" class="button" value="Pagar"><!-- suma total-->
               </div> <!-- Total -->
             </div> <!-- caja resumen-->

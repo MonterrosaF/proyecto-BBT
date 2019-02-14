@@ -44,6 +44,9 @@
         var bonos = document.getElementById("bono_evento");
         var stickers = document.getElementById("stickers");
 
+        botonRegistro.disabled = true;
+
+
         if (document.getElementById('calcular')) {
 
 
@@ -140,6 +143,9 @@
 
                     suma.innerHTML = "$ " + totalPagar.toFixed(2);
 
+                    botonRegistro.disabled = false;
+                    document.getElementById('total_pedido').value = totalPagar;
+
                 }
             } // FUNCION CALCULAR
 
@@ -158,12 +164,14 @@
                 }
 
                 if (boletosMontanismo > 0) {
-                    toursElegidos.push('montanismo');
+                    toursElegidos.push('Bogota_montanismo');
                 }
 
                 for (var i = 0; i < toursElegidos.length; i++) {
                     document.getElementById(toursElegidos[i]).style.display = 'block';
                 }
+
+                console.log(toursElegidos)
 
             }
         }
