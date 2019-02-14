@@ -11,6 +11,24 @@ function productos_json(&$boletos, &$bonos = 0, &$stickers = 0){
         endif;
     endforeach;
 
+    $bonos = (int) $bonos ;
+    if ($bonos > 0):
+        $json['bonos'] = $bonos;
+    endif;
+
+    $stickers = (int) $stickers;
+    if ($stickers > 0):
+        $json['stickers'] = $stickers;
+    endif;
+
     return json_encode($json);
 }
 
+function eventos_json(&$eventos){
+    $eventos_json = array();
+    foreach($eventos as $evento):
+        $eventos_json['eventos'][] = $evento;
+    endforeach;
+
+    return json_encode($eventos_json);
+}

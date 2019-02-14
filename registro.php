@@ -137,10 +137,10 @@
                     <p>Restaurantes:</p>
                     <label><input type="checkbox" name="registro[]" id="conf_07" value="conf_07"><time>11:30</time> Almuerzo "Paseo de olla"</label>
                   </div>
-                  <div>
-                    <p>Obsequios</p>
-                    <label><input type="checkbox" name="registro" id="sem_03" value="sem_03"><time>13:00</time> Llaveros, camisetas y recuerdos de Bogotá</label>
-                  </div>
+                  <!-- <div> -->
+                    <!-- <p>Obsequios</p> -->
+                    <!-- <label><input type="checkbox" name="registro" id="sem_03" value="sem_03"><time>13:00</time> Llaveros, camisetas y recuerdos de Bogotá</label> -->
+                  <!-- </div> -->
               </div> <!-- domingo -->
 
             </div> <!-- caja eventos -->
