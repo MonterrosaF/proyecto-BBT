@@ -192,7 +192,7 @@
     <div class="contenido contenedor">
       <p>Registrate en nuestra pagina</p>
       <h3>BBT</h3>
-      <a href="#" class="button transparente">Registro</a>
+      <a href="#mc_embed_signup" class="boton_newsletter button transparente">Registro</a>
     </div>
   </div>
 

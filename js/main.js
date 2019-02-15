@@ -43,9 +43,9 @@
 
         var bonos = document.getElementById("bono_evento");
         var stickers = document.getElementById("stickers");
-
+        if (document.getElementById('btnRegistro')) {
         botonRegistro.disabled = true;
-
+        }
 
         if (document.getElementById('calcular')) {
 
@@ -176,6 +176,8 @@
             }
         }
         $('.invitado-info').colorbox({inline:true, width:"50%"});
+
+        $('.boton_newsletter').colorbox({inline:true, width:"50%"});
     }); //DOM CONTENT LOADED
 })();
 
